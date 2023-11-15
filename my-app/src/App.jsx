@@ -6,7 +6,7 @@ const pbProvider = PocketBaseProvider('https://special-space-memory-v6vqvrrv745w
 
 function App() {
   return (
-    <Admin dataProvider={pbProvider.dataProvider}>
+    <Admin dataProvider={pbProvider.dataProvider} authProvider={pbProvider.dataProvider}>
       <Resource name="Student" list={StudentList} edit={StudentEdit} show={StudentShow} create={StudentCreate} recordRepresentation="Student_Number" />
     </Admin>
   )
