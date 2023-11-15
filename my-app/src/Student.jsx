@@ -1,4 +1,4 @@
-import { Datagrid, DateField, List, ReferenceField, TextField, EditButton, ShowButton } from 'react-admin';
+import { Datagrid, DateField, List, ReferenceField, TextField, EditButton, ShowButton, Create} from 'react-admin';
 import { DateInput, Edit, ReferenceInput, SimpleForm, TextInput } from 'react-admin';
 import { Show, SimpleShowLayout } from 'react-admin';
 
@@ -11,6 +11,8 @@ export const StudentList = () => (
              <TextField source="Faculty" />
             <DateField source="created" />
             <DateField source="updated" />
+            <EditButton/>
+            <ShowButton/>
         </Datagrid>
     </List>
 );
